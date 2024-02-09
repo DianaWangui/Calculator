@@ -3,9 +3,10 @@
 
 #include <stdio.h>
 
-int add(count, ...);
-int subtract(count, ...);
-int division(count, ...);
-int multiply(count, ...);
+// int add(count, ...);
+// int subtract(count, ...);
+// int division(count, ...);
+// int multiply(count, ...);
+void welcome(void);
 
-#endif *MAIN_H*
+#endif
