@@ -14,6 +14,7 @@ int operation(void)
   printf("Enter your choice here: ");
   scanf("%d", &choice);
 
+  /*Switch statement to work on different */
   switch(choice)
   {
     /*addition*/
