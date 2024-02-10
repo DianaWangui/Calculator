@@ -101,7 +101,7 @@ int operation(void)
           break;
 
       /*Division*/
-      case 5:
+      case 4:
         printf("You chose division.\n");
         printf("Enter your numbers here:");
         for (i = 0; i < 5; i++)
