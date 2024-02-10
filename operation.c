@@ -21,6 +21,7 @@ int operation(void)
     case 1:
       printf("You chose addition.\n");
       printf("Enter your numbers here:");
+      
       for (i = 0; i < 5; i++)
       {
         if (scanf("%d", &num[i]) != 1)
