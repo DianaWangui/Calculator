@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
 
 int add(int num_args, ...);
 int subtract(int num_args, ...);
