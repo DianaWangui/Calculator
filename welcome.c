@@ -12,6 +12,5 @@ void welcome(void)
   printf("2. Subtraction\n");
   printf("3. Multiplication\n");
   printf("4. Division\n");
-  operation();
 }
 
