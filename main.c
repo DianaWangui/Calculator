@@ -4,5 +4,6 @@ int main(void)
 {
   /*Main function calling other functions*/
   welcome();
+  operation();
   return (0);
 }
