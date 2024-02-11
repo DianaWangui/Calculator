@@ -19,6 +19,7 @@ int operation(void)
   int count = 0;
   int num[5];
   int result;
+  int divisor;
 
   printf("Enter your choice here: ");
   scanf("%d", &choice);
@@ -31,15 +32,27 @@ int operation(void)
       printf("Enter '=' after you are done.\n");
       printf("Enter numbers you want to add here: ");
 
-      while (count < 5 && scanf("%d", &num[count]) == 1)
+      while (count <= 5 && scanf("%d", &num[count]) == 1)
       {
         count++;
       }
-      if (count == 0)
+      /*Checking when user enters only one value*/
+      if (count < 2 && count > 0 )
       {
-        fprintf(stderr, "You did not enter any value");
+        fprintf(stderr, "You need to input two values\n");
         return (1);
       }
+      if (count == 0)
+      {
+        fprintf(stderr, "You did not enter any value\n");
+        return (1);
+      }
+      if (count > 6)
+      {
+        fprintf(stderr, "You are not allowed to enter more that 5 values\n");
+        return (1);
+      }
+      
       else 
       {
         /*This is from the function.c file*/
@@ -80,7 +93,7 @@ int operation(void)
       /*multiplication*/
       case 3:
         printf("Enter '=' after you are done.\n");
-        printf("Enter the numbers you want to multiply here:");
+        printf("Enter the numbers you want to multiply here: ");
 
         while (count < 5 && scanf("%d", &num[count]) == 1)
         {
@@ -103,8 +116,8 @@ int operation(void)
       case 4:
         printf("Enter '=' after you are done.\n");
         printf("Enter the number you want to divide: ");
-        scanf("%d", &result);
-        printf("Enter the number(s) you want to divide with here:");
+        scanf("%d", &divisor);
+        printf("Enter the number(s) you want to divide with here: ");
 
         while (count <= 4 && scanf("%d", &num[count]) == 1)
         {
@@ -119,7 +132,7 @@ int operation(void)
         {
           /*This is from the function.c file*/
           // printf("%d", count);
-          result = division(count, result, num[0], num[1], num[2], num[3]);
+          result = division(count, divisor, num[0], num[1], num[2], num[3]);
           printf("Your result is: %d\n", result);
         }
           break;
