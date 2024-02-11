@@ -3,16 +3,6 @@
 /*This is the function prompt that allows user to make the choice
 of the operator and enter the number they want to add*/
 
-// int prompt_loop(void)
-// {
-//   printf("Enter '=' to calculate")
-//   printf("Enter your numbers here: ")
-//   while(count < 5 && scanf("%d", &num[count]) == 1)
-//   {
-//     count++;
-//   }
-// }
-
 int operation(void)
 {
   int choice;
