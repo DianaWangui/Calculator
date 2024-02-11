@@ -5,11 +5,11 @@
 #include <stdarg.h>
 #include <string.h>
 
-int add(int num_args, ...);
-int subtract(int num_args, ...);
+int add(int count, ...);
+int subtract(int count, ...);
 int operation(void);
-int division(int num_args, ...);
-int multiply(int num_args, ...);
+int division(int count, ...);
+int multiply(int count, ...);
 void welcome(void);
 
 
